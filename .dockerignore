@@ -1,0 +1,14 @@
+.venv/
+vosk_models
+result
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.git/
+*.log
+tmp/
+*.md
+*.zip
+Dockerfile
