@@ -5,7 +5,7 @@ from fastapi.responses import FileResponse, JSONResponse
 from pydantic import BaseModel
 import os
 
-# Импортируем ваши функции
+
 from download_video import download_low_quality_fast
 from transcribe_video2text_vosk import transcribe_media_to_text
 from get_all_links import get_all_playlist_videos
@@ -15,7 +15,7 @@ app = FastAPI(title="YouTube Playlist Processor")
 
 # Константы
 RESULTS_DIR = "results"
-os.makedirs(RESULTS_DIR, exist_ok=True)  # Создаем папку если не существует
+os.makedirs(RESULTS_DIR, exist_ok=True)
 
 
 class PlaylistRequest(BaseModel):
