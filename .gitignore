@@ -3,3 +3,10 @@ __pycache__/
 vosk_models/
 tasks/
 youtube_transcriber.log
+download_video.py
+ex_main.py
+get_all_links.py
+get_pdf_file.py
+model_loader.py
+transcribe_video2text_vosk.py
+transcribe_video2text_whisper.py
