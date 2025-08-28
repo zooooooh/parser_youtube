@@ -3,6 +3,7 @@ from app.models import TaskStatus, DownloadType
 from app.services.downloader import DownloaderService
 from app.core.config import settings
 from datetime import datetime
+from app.services.transcriber import transcribe_file
 import os
 
 def get_task_dir(task_id: str) -> str:
@@ -29,15 +30,24 @@ def process_download_task(self, task_id: str, url: str, quality: int, max_worker
         if not result:
             raise Exception("Failed to download content")
 
-        if isinstance(result, list):
-            files = [str(os.path.relpath(file, task_dir)) for file in result]
-        else:
-            files = [str(os.path.relpath(result, task_dir))]
+        # Поддержка одного и нескольких файлов
+        downloaded_files = result if isinstance(result, list) else [result]
+
+        transcribed_files = []
+        for file_path in downloaded_files:
+            abs_path = os.path.abspath(file_path)
+            # Можно менять модель на "vosk" или "whisper-small"
+            transcription_task = transcribe_audio.delay(abs_path, model_name="whisper-small")
+            transcribed_files.append({
+                "audio_file": os.path.relpath(abs_path, task_dir),
+                "transcription_task_id": transcription_task.id
+            })
 
         return {
             'status': TaskStatus.COMPLETED,
             'download_type': DownloadType.PLAYLIST if ('list=' in url or 'playlist' in url) else DownloadType.VIDEO,
-            'files': files,
+            'files': [os.path.relpath(f, task_dir) for f in downloaded_files],
+            'transcriptions': transcribed_files,
             'updated_at': datetime.now().isoformat()
         }
 
@@ -47,3 +57,15 @@ def process_download_task(self, task_id: str, url: str, quality: int, max_worker
             'error': str(e),
             'updated_at': datetime.now().isoformat()
         }
+
+
+
+@celery.task
+def transcribe_audio(mp3_path: str, model_name: str = "whisper-small"):
+    text = transcribe_file(mp3_path, model_name)
+    txt_path = mp3_path.replace(".mp3", ".txt")
+
+    with open(txt_path, "w", encoding="utf-8") as f:
+        f.write(text)
+
+    return txt_path

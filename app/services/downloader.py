@@ -1,5 +1,4 @@
-import os
-from download_video import YouTubeAudioDownloader  # твой импорт
+from app.services.downloader_engine import YouTubeAudioDownloader  # твой импорт
 
 class DownloaderService:
     def __init__(self, task_dir: str):

@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 from app.api.router import api_router
+from app.core.logging_config import setup_logging
 
+setup_logging()  # Настрой логирование здесь
 app = FastAPI(
     title="YouTube Audio Downloader API",
     description="API для асинхронной загрузки аудио с YouTube",
@@ -9,10 +11,10 @@ app = FastAPI(
 
 app.include_router(api_router)
 
-
 if __name__ == "__main__":
     import uvicorn
+
     uvicorn.run("app.main:app", host="0.0.0.0", port=8000, reload=True)
 
-#celery -A app.celery_app.celery worker --loglevel=info --pool=solo
-#python -m app.main
+# celery -A app.celery_app.celery worker --loglevel=info --pool=solo
+# python -m app.main

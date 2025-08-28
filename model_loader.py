@@ -1,42 +1,42 @@
-# import torch
-# from faster_whisper import WhisperModel
-#
-# from functools import lru_cache
-#
-# @lru_cache(maxsize=1)
-# def get_whisper_model(model_name: str = "large-v2") -> WhisperModel:
-#     """Возвращает модель Whisper с кэшированием."""
-#     device = "cuda" if torch.cuda.is_available() else "cpu"
-#     compute_type = "float16" if device == "cuda" else "int8"
-#     return WhisperModel(model_name, device=device, compute_type=compute_type)
-#
-# # Использование:
-# model = get_whisper_model()  # Будет загружена только при первом вызове
+
+from faster_whisper import WhisperModel
+
+from functools import lru_cache
+
+@lru_cache(maxsize=1)
+def get_whisper_model(model_name: str = "large-v2") -> WhisperModel:
+    """Возвращает модель Whisper с кэшированием."""
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    compute_type = "float16" if device == "cuda" else "int8"
+    return WhisperModel(model_name, device=device, compute_type=compute_type)
+
+# Использование:
+model = get_whisper_model()  # Будет загружена только при первом вызове
 
 
-# @lru_cache(maxsize=1)
-# def get_whisper_model(model_name: str = "medium") -> WhisperModel:
-#     """Возвращает модель Whisper с кэшированием (оптимизировано для CPU)."""
-#     return WhisperModel(
-#         model_name,
-#         device="cpu",       # Принудительно используем CPU
-#         compute_type="int8" # Оптимальный тип для CPU
-#     )
-#
-# # Использование (теперь всегда будет CPU-версия):
-# model = get_whisper_model()
+@lru_cache(maxsize=1)
+def get_whisper_model(model_name: str = "medium") -> WhisperModel:
+    """Возвращает модель Whisper с кэшированием (оптимизировано для CPU)."""
+    return WhisperModel(
+        model_name,
+        device="cpu",       # Принудительно используем CPU
+        compute_type="int8" # Оптимальный тип для CPU
+    )
 
-# @lru_cache(maxsize=1)
-# def get_whisper_model(model_name: str = "small") -> WhisperModel:
-#     """Возвращает модель Whisper с кэшированием (оптимизировано для CPU)."""
-#     return WhisperModel(
-#         model_name,
-#         device="cpu",       # Принудительно используем CPU
-#         compute_type="int8" # Оптимальный тип для CPU
-#     )
-#
-# # Использование (теперь всегда будет CPU-версия):
-# model = get_whisper_model()
+# Использование (теперь всегда будет CPU-версия):
+model = get_whisper_model()
+
+@lru_cache(maxsize=1)
+def get_whisper_model(model_name: str = "small") -> WhisperModel:
+    """Возвращает модель Whisper с кэшированием (оптимизировано для CPU)."""
+    return WhisperModel(
+        model_name,
+        device="cpu",       # Принудительно используем CPU
+        compute_type="int8" # Оптимальный тип для CPU
+    )
+
+# Использование (теперь всегда будет CPU-версия):
+model = get_whisper_model()
 
 
 from vosk import Model

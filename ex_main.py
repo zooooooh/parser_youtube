@@ -1,16 +1,15 @@
-import hashlib
 import os
 import uuid
 from datetime import datetime
-from typing import Dict, List, Optional
+from typing import List, Optional
 from fastapi import FastAPI, HTTPException, status
-from fastapi.responses import JSONResponse, FileResponse
+from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field
 from enum import Enum
 from celery import Celery
 from celery.result import AsyncResult
 
-from download_video import YouTubeAudioDownloader
+from app.services.downloader_engine import YouTubeAudioDownloader
 
 # Инициализация Celery
 celery = Celery(
