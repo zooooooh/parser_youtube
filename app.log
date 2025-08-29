@@ -299,3 +299,20 @@
 [2025-08-29 10:08:35] INFO - app.startup - Whisper-модель 'whisper-small' успешно загружена
 [2025-08-29 10:08:35] INFO - app.startup - Vosk-модель успешно загружена
 [2025-08-29 10:08:35] INFO - app.startup - Предзагрузка моделей завершена
+[2025-08-29 10:08:41] INFO - app.services.tasks - [79667fb2-58d9-45c1-baf1-e9bb86b2c838] Старт задачи загрузки. URL: https://www.youtube.com/playlist?list=PLOGi5-fAu8bEL76P0TDo1XC0M78AXqhBX
+[2025-08-29 10:08:41] INFO - app.services.tasks - [79667fb2-58d9-45c1-baf1-e9bb86b2c838] Рабочая директория создана: tasks\79667fb2-58d9-45c1-baf1-e9bb86b2c838
+[2025-08-29 10:08:41] INFO - app.services.tasks - [79667fb2-58d9-45c1-baf1-e9bb86b2c838] Состояние обновлено: PROCESSING
+[2025-08-29 10:08:41] INFO - app.services.downloader_engine - Обнаружен плейлист: https://www.youtube.com/playlist?list=PLOGi5-fAu8bEL76P0TDo1XC0M78AXqhBX
+[2025-08-29 10:08:45] INFO - app.services.downloader_engine - Найдено 2 видео в плейлисте
+[2025-08-29 10:08:45] INFO - app.services.downloader_engine - Попытка 1/2 скачивания: https://www.youtube.com/watch?v=Y06CZUf3cm0
+[2025-08-29 10:08:45] INFO - app.services.downloader_engine - Попытка 1/2 скачивания: https://www.youtube.com/watch?v=LSEuKa2cdzM
+[2025-08-29 10:09:09] INFO - app.services.downloader_engine - Аудио успешно скачано: tasks\79667fb2-58d9-45c1-baf1-e9bb86b2c838\video_1_1756433325.9179702.mp3
+[2025-08-29 10:09:09] INFO - app.services.downloader_engine - Завершено: https://www.youtube.com/watch?v=LSEuKa2cdzM
+[2025-08-29 10:09:12] INFO - app.services.downloader_engine - Аудио успешно скачано: tasks\79667fb2-58d9-45c1-baf1-e9bb86b2c838\video_0_1756433325.9174457.mp3
+[2025-08-29 10:09:12] INFO - app.services.downloader_engine - Завершено: https://www.youtube.com/watch?v=Y06CZUf3cm0
+[2025-08-29 10:09:12] INFO - app.services.tasks - [79667fb2-58d9-45c1-baf1-e9bb86b2c838] Загружено файлов: 2
+[2025-08-29 10:09:12] INFO - app.services.tasks - [79667fb2-58d9-45c1-baf1-e9bb86b2c838] Отправлена задача транскрипции: 0a57b0c5-d77a-47de-b9c9-6a2154767244 для файла C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\79667fb2-58d9-45c1-baf1-e9bb86b2c838\video_1_1756433325.9179702.mp3
+[2025-08-29 10:09:12] INFO - app.services.tasks - [79667fb2-58d9-45c1-baf1-e9bb86b2c838] Отправлена задача транскрипции: 4dd54ad8-ff5c-444f-b73e-0a10df2ce3bf для файла C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\79667fb2-58d9-45c1-baf1-e9bb86b2c838\video_0_1756433325.9174457.mp3
+[2025-08-29 10:09:12] INFO - app.services.tasks - [79667fb2-58d9-45c1-baf1-e9bb86b2c838] Задача завершена успешно.
+[2025-08-29 10:09:12] INFO - app.services.tasks - [Transcribe] Начало транскрипции файла: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\79667fb2-58d9-45c1-baf1-e9bb86b2c838\video_1_1756433325.9179702.mp3 (модель: whisper-small)
+[2025-08-29 10:09:12] INFO - app.services.models_loader - Загрузка модели Whisper: 'small' (device=cpu, compute_type=int8)
