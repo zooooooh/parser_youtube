@@ -4,8 +4,11 @@
 from pathlib import Path
 from fpdf import FPDF
 
-from app.core.logging_config import logger
+from app.core.logging_config import setup_logger
 
+logger = setup_logger(__name__)
+
+logger.info("Модуль инициализирован")
 
 def generate_pdf_from_textfile(text_file_path: str | Path, output_pdf_path: str | Path) -> bool:
     """

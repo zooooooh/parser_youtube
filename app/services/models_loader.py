@@ -7,9 +7,12 @@ import requests
 from functools import lru_cache
 from faster_whisper import WhisperModel
 from vosk import Model
-from app.core.logging_config import logger
 
+from app.core.logging_config import setup_logger
 
+logger = setup_logger(__name__)
+
+logger.info("Модуль инициализирован")
 MODEL_URL = "https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip"
 MODEL_DIR = "vosk_models"
 

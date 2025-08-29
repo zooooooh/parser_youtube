@@ -10,8 +10,11 @@ from vosk import KaldiRecognizer
 
 from app.services.models_loader import get_whisper_model, get_vosk_model
 from app.utils.pdf_generator import generate_pdf_from_textfile
+from app.core.logging_config import setup_logger
 
-from app.core.logging_config import logger
+logger = setup_logger(__name__)
+
+logger.info("Модуль инициализирован")
 
 
 

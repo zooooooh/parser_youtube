@@ -1,0 +1,14 @@
+[2025-08-29 08:47:50] INFO - app.services.downloader_engine - Модуль инициализирован
+[2025-08-29 08:47:52] INFO - app.services.models_loader - Модуль инициализирован
+[2025-08-29 08:49:59] INFO - app.services.downloader_engine - Модуль инициализирован
+[2025-08-29 08:50:00] INFO - app.services.models_loader - Модуль инициализирован
+[2025-08-29 08:50:00] INFO - app.utils.pdf_generator - Модуль инициализирован
+[2025-08-29 08:50:00] INFO - app.services.transcriber - Модуль инициализирован
+[2025-08-29 08:50:14] INFO - app.services.downloader_engine - Модуль инициализирован
+[2025-08-29 08:50:16] INFO - app.services.models_loader - Модуль инициализирован
+[2025-08-29 08:50:16] INFO - app.utils.pdf_generator - Модуль инициализирован
+[2025-08-29 08:50:16] INFO - app.services.transcriber - Модуль инициализирован
+[2025-08-29 08:51:09] INFO - app.services.downloader_engine - Модуль инициализирован
+[2025-08-29 08:51:11] INFO - app.services.models_loader - Модуль инициализирован
+[2025-08-29 08:51:11] INFO - app.utils.pdf_generator - Модуль инициализирован
+[2025-08-29 08:51:11] INFO - app.services.transcriber - Модуль инициализирован

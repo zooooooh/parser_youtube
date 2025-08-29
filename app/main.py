@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from app.api.router import api_router
-from app.core.logging_config import setup_logging
+from app.core.logging_config import setup_logger
 
-setup_logging()  # Настрой логирование здесь
+setup_logger(__name__)
 app = FastAPI(
     title="YouTube Audio Downloader API",
     description="API для асинхронной загрузки аудио с YouTube",
