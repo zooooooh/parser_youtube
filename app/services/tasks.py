@@ -1,3 +1,4 @@
+#app\services\tasks.py
 import os
 from datetime import datetime
 
@@ -15,7 +16,7 @@ def get_task_dir(task_id: str) -> str:
 
 
 @celery.task(bind=True, name='process_download_task')
-def process_download_task(self, task_id: str, url: str, quality: int, max_workers: int):
+def process_download_task(self, task_id: str, url: str, quality: int, max_workers: int, model_name: str = "whisper-small"):
     logger.info(f"[{task_id}] Старт задачи загрузки. URL: {url}")
     try:
         task_dir = get_task_dir(task_id)
@@ -47,7 +48,7 @@ def process_download_task(self, task_id: str, url: str, quality: int, max_worker
         transcribed_files = []
         for file_path in downloaded_files:
             abs_path = os.path.abspath(file_path)
-            transcription_task = transcribe_audio.delay(abs_path, model_name="whisper-small")
+            transcription_task = transcribe_audio.delay(abs_path, model_name=model_name)
             logger.info(f"[{task_id}] Отправлена задача транскрипции: {transcription_task.id} для файла {abs_path}")
             transcribed_files.append({
                 "audio_file": os.path.relpath(abs_path, task_dir),
@@ -70,6 +71,7 @@ def process_download_task(self, task_id: str, url: str, quality: int, max_worker
             'error': str(e),
             'updated_at': datetime.now().isoformat()
         }
+
 
 
 @celery.task

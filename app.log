@@ -12,3 +12,290 @@
 [2025-08-29 08:51:11] INFO - app.services.models_loader - Модуль инициализирован
 [2025-08-29 08:51:11] INFO - app.utils.pdf_generator - Модуль инициализирован
 [2025-08-29 08:51:11] INFO - app.services.transcriber - Модуль инициализирован
+[2025-08-29 08:52:18] INFO - app.services.downloader_engine - Модуль инициализирован
+[2025-08-29 08:52:20] INFO - app.services.models_loader - Модуль инициализирован
+[2025-08-29 08:52:20] INFO - app.utils.pdf_generator - Модуль инициализирован
+[2025-08-29 08:52:20] INFO - app.services.transcriber - Модуль инициализирован
+[2025-08-29 08:54:29] INFO - app.services.downloader_engine - Модуль инициализирован
+[2025-08-29 08:54:31] INFO - app.services.models_loader - Модуль инициализирован
+[2025-08-29 08:54:31] INFO - app.utils.pdf_generator - Модуль инициализирован
+[2025-08-29 08:54:31] INFO - app.services.transcriber - Модуль инициализирован
+[2025-08-29 08:58:10] INFO - app.services.tasks - [55cd215b-361f-4877-92b7-c8f7949773a3] Старт задачи загрузки. URL: https://www.youtube.com/playlist?list=PLOGi5-fAu8bEL76P0TDo1XC0M78AXqhBX
+[2025-08-29 08:58:10] INFO - app.services.tasks - [55cd215b-361f-4877-92b7-c8f7949773a3] Рабочая директория создана: tasks\55cd215b-361f-4877-92b7-c8f7949773a3
+[2025-08-29 08:58:10] INFO - app.services.tasks - [55cd215b-361f-4877-92b7-c8f7949773a3] Состояние обновлено: PROCESSING
+[2025-08-29 08:58:10] INFO - app.services.downloader_engine - Обнаружен плейлист: https://www.youtube.com/playlist?list=PLOGi5-fAu8bEL76P0TDo1XC0M78AXqhBX
+[2025-08-29 08:58:15] INFO - app.services.downloader_engine - Найдено 2 видео в плейлисте
+[2025-08-29 08:58:15] INFO - app.services.downloader_engine - Попытка 1/2 скачивания: https://www.youtube.com/watch?v=Y06CZUf3cm0
+[2025-08-29 08:58:15] INFO - app.services.downloader_engine - Попытка 1/2 скачивания: https://www.youtube.com/watch?v=LSEuKa2cdzM
+[2025-08-29 08:59:25] INFO - app.services.downloader_engine - Аудио успешно скачано: tasks\55cd215b-361f-4877-92b7-c8f7949773a3\video_1_1756429095.4616985.mp3
+[2025-08-29 08:59:25] INFO - app.services.downloader_engine - Завершено: https://www.youtube.com/watch?v=LSEuKa2cdzM
+[2025-08-29 08:59:43] INFO - app.services.downloader_engine - Аудио успешно скачано: tasks\55cd215b-361f-4877-92b7-c8f7949773a3\video_0_1756429095.4611819.mp3
+[2025-08-29 08:59:43] INFO - app.services.downloader_engine - Завершено: https://www.youtube.com/watch?v=Y06CZUf3cm0
+[2025-08-29 08:59:43] INFO - app.services.tasks - [55cd215b-361f-4877-92b7-c8f7949773a3] Загружено файлов: 2
+[2025-08-29 08:59:43] INFO - app.services.tasks - [55cd215b-361f-4877-92b7-c8f7949773a3] Отправлена задача транскрипции: 82481a7f-0174-49b3-aadd-17a50752359e для файла C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\55cd215b-361f-4877-92b7-c8f7949773a3\video_1_1756429095.4616985.mp3
+[2025-08-29 08:59:43] INFO - app.services.tasks - [55cd215b-361f-4877-92b7-c8f7949773a3] Отправлена задача транскрипции: a8139308-6b9c-4b74-9095-ed01636866f5 для файла C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\55cd215b-361f-4877-92b7-c8f7949773a3\video_0_1756429095.4611819.mp3
+[2025-08-29 08:59:43] INFO - app.services.tasks - [55cd215b-361f-4877-92b7-c8f7949773a3] Задача завершена успешно.
+[2025-08-29 08:59:43] INFO - app.services.tasks - [Transcribe] Начало транскрипции файла: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\55cd215b-361f-4877-92b7-c8f7949773a3\video_1_1756429095.4616985.mp3 (модель: whisper-small)
+[2025-08-29 08:59:43] INFO - app.services.models_loader - Загрузка модели Whisper: 'small' (device=cpu, compute_type=int8)
+[2025-08-29 09:02:13] INFO - app.services.transcriber - Транскрипт сохранён в: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\55cd215b-361f-4877-92b7-c8f7949773a3\video_1_1756429095.txt
+[2025-08-29 09:02:13] INFO - app.utils.pdf_generator - PDF создан: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\55cd215b-361f-4877-92b7-c8f7949773a3\video_1_1756429095.pdf
+[2025-08-29 09:02:13] INFO - app.services.transcriber - PDF успешно создан: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\55cd215b-361f-4877-92b7-c8f7949773a3\video_1_1756429095.pdf
+[2025-08-29 09:02:13] INFO - app.services.transcriber - Удалён исходный MP3 файл: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\55cd215b-361f-4877-92b7-c8f7949773a3\video_1_1756429095.4616985.mp3
+[2025-08-29 09:02:13] INFO - app.services.transcriber - Удалён временный TXT файл: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\55cd215b-361f-4877-92b7-c8f7949773a3\video_1_1756429095.txt
+[2025-08-29 09:02:13] INFO - app.services.tasks - [Transcribe] Транскрипция завершена: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\55cd215b-361f-4877-92b7-c8f7949773a3\video_1_1756429095.4616985.txt
+[2025-08-29 09:02:13] INFO - app.services.tasks - [Transcribe] Начало транскрипции файла: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\55cd215b-361f-4877-92b7-c8f7949773a3\video_0_1756429095.4611819.mp3 (модель: whisper-small)
+[2025-08-29 09:04:33] INFO - app.services.transcriber - Транскрипт сохранён в: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\55cd215b-361f-4877-92b7-c8f7949773a3\video_0_1756429095.txt
+[2025-08-29 09:04:33] INFO - app.utils.pdf_generator - PDF создан: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\55cd215b-361f-4877-92b7-c8f7949773a3\video_0_1756429095.pdf
+[2025-08-29 09:04:33] INFO - app.services.transcriber - PDF успешно создан: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\55cd215b-361f-4877-92b7-c8f7949773a3\video_0_1756429095.pdf
+[2025-08-29 09:04:33] INFO - app.services.transcriber - Удалён исходный MP3 файл: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\55cd215b-361f-4877-92b7-c8f7949773a3\video_0_1756429095.4611819.mp3
+[2025-08-29 09:04:33] INFO - app.services.transcriber - Удалён временный TXT файл: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\55cd215b-361f-4877-92b7-c8f7949773a3\video_0_1756429095.txt
+[2025-08-29 09:04:33] INFO - app.services.tasks - [Transcribe] Транскрипция завершена: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\55cd215b-361f-4877-92b7-c8f7949773a3\video_0_1756429095.4611819.txt
+[2025-08-29 09:39:22] INFO - app.services.downloader_engine - Модуль инициализирован
+[2025-08-29 09:39:24] INFO - app.services.models_loader - Модуль инициализирован
+[2025-08-29 09:39:24] INFO - app.utils.pdf_generator - Модуль инициализирован
+[2025-08-29 09:39:24] INFO - app.services.transcriber - Модуль инициализирован
+[2025-08-29 09:39:24] INFO - app.startup - Начата предзагрузка моделей...
+[2025-08-29 09:39:24] INFO - app.services.models_loader - Загрузка модели Whisper: 'small' (device=cpu, compute_type=int8)
+[2025-08-29 09:39:28] INFO - app.startup - Whisper-модель 'whisper-small' успешно загружена
+[2025-08-29 09:39:28] INFO - app.startup - Vosk-модель успешно загружена
+[2025-08-29 09:39:28] INFO - app.startup - Предзагрузка моделей завершена
+[2025-08-29 09:39:42] INFO - app.services.downloader_engine - Модуль инициализирован
+[2025-08-29 09:39:43] INFO - app.services.models_loader - Модуль инициализирован
+[2025-08-29 09:39:43] INFO - app.utils.pdf_generator - Модуль инициализирован
+[2025-08-29 09:39:43] INFO - app.services.transcriber - Модуль инициализирован
+[2025-08-29 09:48:16] INFO - app.services.downloader_engine - Модуль инициализирован
+[2025-08-29 09:48:18] INFO - app.services.models_loader - Модуль инициализирован
+[2025-08-29 09:48:18] INFO - app.utils.pdf_generator - Модуль инициализирован
+[2025-08-29 09:48:18] INFO - app.services.transcriber - Модуль инициализирован
+[2025-08-29 09:48:18] INFO - app.startup - Начата предзагрузка моделей...
+[2025-08-29 09:48:18] INFO - app.services.models_loader - Загрузка модели Whisper: 'small' (device=cpu, compute_type=int8)
+[2025-08-29 09:48:22] INFO - app.startup - Whisper-модель 'whisper-small' успешно загружена
+[2025-08-29 09:48:22] INFO - app.startup - Vosk-модель успешно загружена
+[2025-08-29 09:48:22] INFO - app.startup - Предзагрузка моделей завершена
+[2025-08-29 09:49:00] INFO - app.services.downloader_engine - Модуль инициализирован
+[2025-08-29 09:49:01] INFO - app.services.models_loader - Модуль инициализирован
+[2025-08-29 09:49:01] INFO - app.utils.pdf_generator - Модуль инициализирован
+[2025-08-29 09:49:01] INFO - app.services.transcriber - Модуль инициализирован
+[2025-08-29 09:49:01] INFO - app.startup - Начата предзагрузка моделей...
+[2025-08-29 09:49:01] INFO - app.services.models_loader - Загрузка модели Whisper: 'small' (device=cpu, compute_type=int8)
+[2025-08-29 09:49:05] INFO - app.startup - Whisper-модель 'whisper-small' успешно загружена
+[2025-08-29 09:49:05] INFO - app.startup - Vosk-модель успешно загружена
+[2025-08-29 09:49:05] INFO - app.startup - Предзагрузка моделей завершена
+[2025-08-29 09:49:06] INFO - app.services.downloader_engine - Модуль инициализирован
+[2025-08-29 09:49:08] INFO - app.services.models_loader - Модуль инициализирован
+[2025-08-29 09:49:08] INFO - app.utils.pdf_generator - Модуль инициализирован
+[2025-08-29 09:49:08] INFO - app.services.transcriber - Модуль инициализирован
+[2025-08-29 09:49:08] INFO - app.startup - Начата предзагрузка моделей...
+[2025-08-29 09:49:08] INFO - app.services.models_loader - Загрузка модели Whisper: 'small' (device=cpu, compute_type=int8)
+[2025-08-29 09:49:10] INFO - app.startup - Whisper-модель 'whisper-small' успешно загружена
+[2025-08-29 09:49:11] INFO - app.startup - Vosk-модель успешно загружена
+[2025-08-29 09:49:11] INFO - app.startup - Предзагрузка моделей завершена
+[2025-08-29 09:49:11] INFO - app.startup - Начата предзагрузка моделей...
+[2025-08-29 09:49:11] INFO - app.startup - Whisper-модель 'whisper-small' успешно загружена
+[2025-08-29 09:49:11] INFO - app.startup - Vosk-модель успешно загружена
+[2025-08-29 09:49:11] INFO - app.startup - Предзагрузка моделей завершена
+[2025-08-29 09:51:24] INFO - app.services.downloader_engine - Модуль инициализирован
+[2025-08-29 09:51:26] INFO - app.services.models_loader - Модуль инициализирован
+[2025-08-29 09:51:26] INFO - app.utils.pdf_generator - Модуль инициализирован
+[2025-08-29 09:51:26] INFO - app.services.transcriber - Модуль инициализирован
+[2025-08-29 09:51:26] INFO - app.startup - Начата предзагрузка моделей...
+[2025-08-29 09:51:26] INFO - app.services.models_loader - Загрузка модели Whisper: 'small' (device=cpu, compute_type=int8)
+[2025-08-29 09:51:30] INFO - app.startup - Whisper-модель 'whisper-small' успешно загружена
+[2025-08-29 09:51:30] INFO - app.startup - Vosk-модель успешно загружена
+[2025-08-29 09:51:30] INFO - app.startup - Предзагрузка моделей завершена
+[2025-08-29 09:54:53] INFO - app.services.downloader_engine - Модуль инициализирован
+[2025-08-29 09:54:54] INFO - app.services.models_loader - Модуль инициализирован
+[2025-08-29 09:54:54] INFO - app.utils.pdf_generator - Модуль инициализирован
+[2025-08-29 09:54:54] INFO - app.services.transcriber - Модуль инициализирован
+[2025-08-29 09:54:54] INFO - app.startup - Начата предзагрузка моделей...
+[2025-08-29 09:54:54] INFO - app.services.models_loader - Загрузка модели Whisper: 'small' (device=cpu, compute_type=int8)
+[2025-08-29 09:54:58] INFO - app.startup - Whisper-модель 'whisper-small' успешно загружена
+[2025-08-29 09:54:59] INFO - app.startup - Vosk-модель успешно загружена
+[2025-08-29 09:54:59] INFO - app.startup - Предзагрузка моделей завершена
+[2025-08-29 09:55:01] INFO - app.services.downloader_engine - Модуль инициализирован
+[2025-08-29 09:55:03] INFO - app.services.models_loader - Модуль инициализирован
+[2025-08-29 09:55:03] INFO - app.utils.pdf_generator - Модуль инициализирован
+[2025-08-29 09:55:03] INFO - app.services.transcriber - Модуль инициализирован
+[2025-08-29 09:55:03] INFO - app.startup - Начата предзагрузка моделей...
+[2025-08-29 09:55:03] INFO - app.services.models_loader - Загрузка модели Whisper: 'small' (device=cpu, compute_type=int8)
+[2025-08-29 09:55:05] INFO - app.startup - Whisper-модель 'whisper-small' успешно загружена
+[2025-08-29 09:55:06] INFO - app.startup - Vosk-модель успешно загружена
+[2025-08-29 09:55:06] INFO - app.startup - Предзагрузка моделей завершена
+[2025-08-29 09:55:32] INFO - app.services.tasks - [6f3bc486-5d7b-4aa8-bc6f-684aab7aafe2] Старт задачи загрузки. URL: string
+[2025-08-29 09:55:32] INFO - app.services.tasks - [6f3bc486-5d7b-4aa8-bc6f-684aab7aafe2] Рабочая директория создана: tasks\6f3bc486-5d7b-4aa8-bc6f-684aab7aafe2
+[2025-08-29 09:55:32] INFO - app.services.tasks - [6f3bc486-5d7b-4aa8-bc6f-684aab7aafe2] Состояние обновлено: PROCESSING
+[2025-08-29 09:55:32] INFO - app.services.downloader_engine - Обнаружено отдельное видео: string
+[2025-08-29 09:55:32] INFO - app.services.downloader_engine - Попытка 1/3 скачивания: string
+[2025-08-29 09:55:33] ERROR - app.services.downloader_engine - Ошибка при попытке 1: ERROR: [generic] 'string' is not a valid URL. Set --default-search "ytsearch" (or run  yt-dlp "ytsearch:string" ) to search YouTube
+[2025-08-29 09:55:33] INFO - app.services.downloader_engine - Повторная попытка через 5 секунд...
+[2025-08-29 09:55:38] INFO - app.services.downloader_engine - Попытка 2/3 скачивания: string
+[2025-08-29 09:55:38] ERROR - app.services.downloader_engine - Ошибка при попытке 2: ERROR: [generic] 'string' is not a valid URL. Set --default-search "ytsearch" (or run  yt-dlp "ytsearch:string" ) to search YouTube
+[2025-08-29 09:55:38] INFO - app.services.downloader_engine - Повторная попытка через 5 секунд...
+[2025-08-29 09:55:43] INFO - app.services.downloader_engine - Попытка 3/3 скачивания: string
+[2025-08-29 09:55:43] ERROR - app.services.downloader_engine - Ошибка при попытке 3: ERROR: [generic] 'string' is not a valid URL. Set --default-search "ytsearch" (or run  yt-dlp "ytsearch:string" ) to search YouTube
+[2025-08-29 09:55:43] ERROR - app.services.downloader_engine - Не удалось скачать аудио после 3 попыток
+[2025-08-29 09:55:43] ERROR - app.services.tasks - [6f3bc486-5d7b-4aa8-bc6f-684aab7aafe2] Ошибка при обработке задачи: Не удалось скачать контент
+[2025-08-29 09:56:09] INFO - app.services.downloader_engine - Модуль инициализирован
+[2025-08-29 09:56:10] INFO - app.services.models_loader - Модуль инициализирован
+[2025-08-29 09:56:10] INFO - app.utils.pdf_generator - Модуль инициализирован
+[2025-08-29 09:56:10] INFO - app.services.transcriber - Модуль инициализирован
+[2025-08-29 09:56:10] INFO - app.startup - Начата предзагрузка моделей...
+[2025-08-29 09:56:10] INFO - app.services.models_loader - Загрузка модели Whisper: 'small' (device=cpu, compute_type=int8)
+[2025-08-29 09:56:14] INFO - app.startup - Whisper-модель 'whisper-small' успешно загружена
+[2025-08-29 09:56:15] INFO - app.startup - Vosk-модель успешно загружена
+[2025-08-29 09:56:15] INFO - app.startup - Предзагрузка моделей завершена
+[2025-08-29 09:56:24] INFO - app.services.downloader_engine - Модуль инициализирован
+[2025-08-29 09:56:25] INFO - app.services.models_loader - Модуль инициализирован
+[2025-08-29 09:56:25] INFO - app.utils.pdf_generator - Модуль инициализирован
+[2025-08-29 09:56:25] INFO - app.services.transcriber - Модуль инициализирован
+[2025-08-29 09:56:25] INFO - app.startup - Начата предзагрузка моделей...
+[2025-08-29 09:56:25] INFO - app.services.models_loader - Загрузка модели Whisper: 'small' (device=cpu, compute_type=int8)
+[2025-08-29 09:56:28] INFO - app.startup - Whisper-модель 'whisper-small' успешно загружена
+[2025-08-29 09:56:28] INFO - app.startup - Vosk-модель успешно загружена
+[2025-08-29 09:56:28] INFO - app.startup - Предзагрузка моделей завершена
+[2025-08-29 09:56:29] INFO - app.services.downloader_engine - Модуль инициализирован
+[2025-08-29 09:56:31] INFO - app.services.models_loader - Модуль инициализирован
+[2025-08-29 09:56:31] INFO - app.utils.pdf_generator - Модуль инициализирован
+[2025-08-29 09:56:31] INFO - app.services.transcriber - Модуль инициализирован
+[2025-08-29 09:56:31] INFO - app.startup - Начата предзагрузка моделей...
+[2025-08-29 09:56:31] INFO - app.services.models_loader - Загрузка модели Whisper: 'small' (device=cpu, compute_type=int8)
+[2025-08-29 09:56:33] INFO - app.startup - Whisper-модель 'whisper-small' успешно загружена
+[2025-08-29 09:56:34] INFO - app.startup - Vosk-модель успешно загружена
+[2025-08-29 09:56:34] INFO - app.startup - Предзагрузка моделей завершена
+[2025-08-29 09:56:41] INFO - app.services.downloader_engine - Модуль инициализирован
+[2025-08-29 09:56:42] INFO - app.services.models_loader - Модуль инициализирован
+[2025-08-29 09:56:42] INFO - app.utils.pdf_generator - Модуль инициализирован
+[2025-08-29 09:56:42] INFO - app.services.transcriber - Модуль инициализирован
+[2025-08-29 09:57:15] INFO - app.services.tasks - [1d862165-5144-4da2-8073-6a16ad510bca] Старт задачи загрузки. URL: string
+[2025-08-29 09:57:15] INFO - app.services.tasks - [1d862165-5144-4da2-8073-6a16ad510bca] Рабочая директория создана: tasks\1d862165-5144-4da2-8073-6a16ad510bca
+[2025-08-29 09:57:15] INFO - app.services.tasks - [1d862165-5144-4da2-8073-6a16ad510bca] Состояние обновлено: PROCESSING
+[2025-08-29 09:57:15] INFO - app.services.downloader_engine - Обнаружено отдельное видео: string
+[2025-08-29 09:57:15] INFO - app.services.downloader_engine - Попытка 1/3 скачивания: string
+[2025-08-29 09:57:16] ERROR - app.services.downloader_engine - Ошибка при попытке 1: ERROR: [generic] 'string' is not a valid URL. Set --default-search "ytsearch" (or run  yt-dlp "ytsearch:string" ) to search YouTube
+[2025-08-29 09:57:16] INFO - app.services.downloader_engine - Повторная попытка через 5 секунд...
+[2025-08-29 09:57:21] INFO - app.services.downloader_engine - Попытка 2/3 скачивания: string
+[2025-08-29 09:57:21] ERROR - app.services.downloader_engine - Ошибка при попытке 2: ERROR: [generic] 'string' is not a valid URL. Set --default-search "ytsearch" (or run  yt-dlp "ytsearch:string" ) to search YouTube
+[2025-08-29 09:57:21] INFO - app.services.downloader_engine - Повторная попытка через 5 секунд...
+[2025-08-29 09:57:26] INFO - app.services.downloader_engine - Попытка 3/3 скачивания: string
+[2025-08-29 09:57:26] ERROR - app.services.downloader_engine - Ошибка при попытке 3: ERROR: [generic] 'string' is not a valid URL. Set --default-search "ytsearch" (or run  yt-dlp "ytsearch:string" ) to search YouTube
+[2025-08-29 09:57:26] ERROR - app.services.downloader_engine - Не удалось скачать аудио после 3 попыток
+[2025-08-29 09:57:26] ERROR - app.services.tasks - [1d862165-5144-4da2-8073-6a16ad510bca] Ошибка при обработке задачи: Не удалось скачать контент
+[2025-08-29 09:57:26] INFO - app.services.tasks - [1a6cd02a-6e06-406b-9577-7b2685663794] Старт задачи загрузки. URL: string
+[2025-08-29 09:57:26] INFO - app.services.tasks - [1a6cd02a-6e06-406b-9577-7b2685663794] Рабочая директория создана: tasks\1a6cd02a-6e06-406b-9577-7b2685663794
+[2025-08-29 09:57:26] INFO - app.services.tasks - [1a6cd02a-6e06-406b-9577-7b2685663794] Состояние обновлено: PROCESSING
+[2025-08-29 09:57:26] INFO - app.services.downloader_engine - Обнаружено отдельное видео: string
+[2025-08-29 09:57:26] INFO - app.services.downloader_engine - Попытка 1/3 скачивания: string
+[2025-08-29 09:57:26] ERROR - app.services.downloader_engine - Ошибка при попытке 1: ERROR: [generic] 'string' is not a valid URL. Set --default-search "ytsearch" (or run  yt-dlp "ytsearch:string" ) to search YouTube
+[2025-08-29 09:57:26] INFO - app.services.downloader_engine - Повторная попытка через 5 секунд...
+[2025-08-29 09:57:31] INFO - app.services.downloader_engine - Попытка 2/3 скачивания: string
+[2025-08-29 09:57:31] ERROR - app.services.downloader_engine - Ошибка при попытке 2: ERROR: [generic] 'string' is not a valid URL. Set --default-search "ytsearch" (or run  yt-dlp "ytsearch:string" ) to search YouTube
+[2025-08-29 09:57:31] INFO - app.services.downloader_engine - Повторная попытка через 5 секунд...
+[2025-08-29 09:57:36] INFO - app.services.downloader_engine - Попытка 3/3 скачивания: string
+[2025-08-29 09:57:36] ERROR - app.services.downloader_engine - Ошибка при попытке 3: ERROR: [generic] 'string' is not a valid URL. Set --default-search "ytsearch" (or run  yt-dlp "ytsearch:string" ) to search YouTube
+[2025-08-29 09:57:36] ERROR - app.services.downloader_engine - Не удалось скачать аудио после 3 попыток
+[2025-08-29 09:57:36] ERROR - app.services.tasks - [1a6cd02a-6e06-406b-9577-7b2685663794] Ошибка при обработке задачи: Не удалось скачать контент
+[2025-08-29 09:58:54] INFO - app.services.downloader_engine - Модуль инициализирован
+[2025-08-29 09:58:56] INFO - app.services.models_loader - Модуль инициализирован
+[2025-08-29 09:58:56] INFO - app.utils.pdf_generator - Модуль инициализирован
+[2025-08-29 09:58:56] INFO - app.services.transcriber - Модуль инициализирован
+[2025-08-29 09:58:56] INFO - app.startup - Начата предзагрузка моделей...
+[2025-08-29 09:58:56] INFO - app.services.models_loader - Загрузка модели Whisper: 'small' (device=cpu, compute_type=int8)
+[2025-08-29 09:58:56] INFO - app.services.downloader_engine - Модуль инициализирован
+[2025-08-29 09:58:58] INFO - app.services.models_loader - Модуль инициализирован
+[2025-08-29 09:58:58] INFO - app.utils.pdf_generator - Модуль инициализирован
+[2025-08-29 09:58:58] INFO - app.services.transcriber - Модуль инициализирован
+[2025-08-29 09:59:00] INFO - app.startup - Whisper-модель 'whisper-small' успешно загружена
+[2025-08-29 09:59:00] INFO - app.startup - Vosk-модель успешно загружена
+[2025-08-29 09:59:00] INFO - app.startup - Предзагрузка моделей завершена
+[2025-08-29 10:04:31] INFO - app.services.downloader_engine - Модуль инициализирован
+[2025-08-29 10:04:33] INFO - app.services.downloader_engine - Модуль инициализирован
+[2025-08-29 10:04:34] INFO - app.services.models_loader - Модуль инициализирован
+[2025-08-29 10:04:34] INFO - app.utils.pdf_generator - Модуль инициализирован
+[2025-08-29 10:04:34] INFO - app.services.transcriber - Модуль инициализирован
+[2025-08-29 10:04:34] INFO - app.startup - Начата предзагрузка моделей...
+[2025-08-29 10:04:34] INFO - app.services.models_loader - Загрузка модели Whisper: 'small' (device=cpu, compute_type=int8)
+[2025-08-29 10:04:36] INFO - app.services.models_loader - Модуль инициализирован
+[2025-08-29 10:04:36] INFO - app.utils.pdf_generator - Модуль инициализирован
+[2025-08-29 10:04:36] INFO - app.services.transcriber - Модуль инициализирован
+[2025-08-29 10:04:48] INFO - app.startup - Whisper-модель 'whisper-small' успешно загружена
+[2025-08-29 10:04:48] INFO - app.startup - Vosk-модель успешно загружена
+[2025-08-29 10:04:48] INFO - app.startup - Предзагрузка моделей завершена
+[2025-08-29 10:04:59] INFO - app.services.tasks - [1a8e9faa-01b3-4f9f-b753-c799ece2bdc0] Старт задачи загрузки. URL: string
+[2025-08-29 10:04:59] INFO - app.services.tasks - [1a8e9faa-01b3-4f9f-b753-c799ece2bdc0] Рабочая директория создана: tasks\1a8e9faa-01b3-4f9f-b753-c799ece2bdc0
+[2025-08-29 10:04:59] INFO - app.services.tasks - [1a8e9faa-01b3-4f9f-b753-c799ece2bdc0] Состояние обновлено: PROCESSING
+[2025-08-29 10:04:59] INFO - app.services.downloader_engine - Обнаружено отдельное видео: string
+[2025-08-29 10:04:59] INFO - app.services.downloader_engine - Попытка 1/3 скачивания: string
+[2025-08-29 10:05:00] ERROR - app.services.downloader_engine - Ошибка при попытке 1: ERROR: [generic] 'string' is not a valid URL. Set --default-search "ytsearch" (or run  yt-dlp "ytsearch:string" ) to search YouTube
+[2025-08-29 10:05:00] INFO - app.services.downloader_engine - Повторная попытка через 5 секунд...
+[2025-08-29 10:05:05] INFO - app.services.downloader_engine - Попытка 2/3 скачивания: string
+[2025-08-29 10:05:05] ERROR - app.services.downloader_engine - Ошибка при попытке 2: ERROR: [generic] 'string' is not a valid URL. Set --default-search "ytsearch" (or run  yt-dlp "ytsearch:string" ) to search YouTube
+[2025-08-29 10:05:05] INFO - app.services.downloader_engine - Повторная попытка через 5 секунд...
+[2025-08-29 10:05:10] INFO - app.services.downloader_engine - Попытка 3/3 скачивания: string
+[2025-08-29 10:05:10] ERROR - app.services.downloader_engine - Ошибка при попытке 3: ERROR: [generic] 'string' is not a valid URL. Set --default-search "ytsearch" (or run  yt-dlp "ytsearch:string" ) to search YouTube
+[2025-08-29 10:05:10] ERROR - app.services.downloader_engine - Не удалось скачать аудио после 3 попыток
+[2025-08-29 10:05:10] ERROR - app.services.tasks - [1a8e9faa-01b3-4f9f-b753-c799ece2bdc0] Ошибка при обработке задачи: Не удалось скачать контент
+[2025-08-29 10:05:10] INFO - app.services.tasks - [469f8a78-4edb-43f9-8d0e-734cfc7fe62a] Старт задачи загрузки. URL: string
+[2025-08-29 10:05:10] INFO - app.services.tasks - [469f8a78-4edb-43f9-8d0e-734cfc7fe62a] Рабочая директория создана: tasks\469f8a78-4edb-43f9-8d0e-734cfc7fe62a
+[2025-08-29 10:05:10] INFO - app.services.tasks - [469f8a78-4edb-43f9-8d0e-734cfc7fe62a] Состояние обновлено: PROCESSING
+[2025-08-29 10:05:10] INFO - app.services.downloader_engine - Обнаружено отдельное видео: string
+[2025-08-29 10:05:10] INFO - app.services.downloader_engine - Попытка 1/3 скачивания: string
+[2025-08-29 10:05:10] ERROR - app.services.downloader_engine - Ошибка при попытке 1: ERROR: [generic] 'string' is not a valid URL. Set --default-search "ytsearch" (or run  yt-dlp "ytsearch:string" ) to search YouTube
+[2025-08-29 10:05:10] INFO - app.services.downloader_engine - Повторная попытка через 5 секунд...
+[2025-08-29 10:05:15] INFO - app.services.downloader_engine - Попытка 2/3 скачивания: string
+[2025-08-29 10:05:15] ERROR - app.services.downloader_engine - Ошибка при попытке 2: ERROR: [generic] 'string' is not a valid URL. Set --default-search "ytsearch" (or run  yt-dlp "ytsearch:string" ) to search YouTube
+[2025-08-29 10:05:15] INFO - app.services.downloader_engine - Повторная попытка через 5 секунд...
+[2025-08-29 10:05:20] INFO - app.services.downloader_engine - Попытка 3/3 скачивания: string
+[2025-08-29 10:05:20] ERROR - app.services.downloader_engine - Ошибка при попытке 3: ERROR: [generic] 'string' is not a valid URL. Set --default-search "ytsearch" (or run  yt-dlp "ytsearch:string" ) to search YouTube
+[2025-08-29 10:05:20] ERROR - app.services.downloader_engine - Не удалось скачать аудио после 3 попыток
+[2025-08-29 10:05:20] ERROR - app.services.tasks - [469f8a78-4edb-43f9-8d0e-734cfc7fe62a] Ошибка при обработке задачи: Не удалось скачать контент
+[2025-08-29 10:05:20] INFO - app.services.tasks - [87b4043d-a134-4a88-b5e2-10961aac85f0] Старт задачи загрузки. URL: string
+[2025-08-29 10:05:20] INFO - app.services.tasks - [87b4043d-a134-4a88-b5e2-10961aac85f0] Рабочая директория создана: tasks\87b4043d-a134-4a88-b5e2-10961aac85f0
+[2025-08-29 10:05:20] INFO - app.services.tasks - [87b4043d-a134-4a88-b5e2-10961aac85f0] Состояние обновлено: PROCESSING
+[2025-08-29 10:05:20] INFO - app.services.downloader_engine - Обнаружено отдельное видео: string
+[2025-08-29 10:05:20] INFO - app.services.downloader_engine - Попытка 1/3 скачивания: string
+[2025-08-29 10:05:20] ERROR - app.services.downloader_engine - Ошибка при попытке 1: ERROR: [generic] 'string' is not a valid URL. Set --default-search "ytsearch" (or run  yt-dlp "ytsearch:string" ) to search YouTube
+[2025-08-29 10:05:20] INFO - app.services.downloader_engine - Повторная попытка через 5 секунд...
+[2025-08-29 10:05:25] INFO - app.services.downloader_engine - Попытка 2/3 скачивания: string
+[2025-08-29 10:05:25] ERROR - app.services.downloader_engine - Ошибка при попытке 2: ERROR: [generic] 'string' is not a valid URL. Set --default-search "ytsearch" (or run  yt-dlp "ytsearch:string" ) to search YouTube
+[2025-08-29 10:05:25] INFO - app.services.downloader_engine - Повторная попытка через 5 секунд...
+[2025-08-29 10:05:30] INFO - app.services.downloader_engine - Попытка 3/3 скачивания: string
+[2025-08-29 10:05:30] ERROR - app.services.downloader_engine - Ошибка при попытке 3: ERROR: [generic] 'string' is not a valid URL. Set --default-search "ytsearch" (or run  yt-dlp "ytsearch:string" ) to search YouTube
+[2025-08-29 10:05:30] ERROR - app.services.downloader_engine - Не удалось скачать аудио после 3 попыток
+[2025-08-29 10:05:30] ERROR - app.services.tasks - [87b4043d-a134-4a88-b5e2-10961aac85f0] Ошибка при обработке задачи: Не удалось скачать контент
+[2025-08-29 10:05:31] INFO - app.services.tasks - [0b767ce0-9fa8-4ca3-a524-167bd5822a38] Старт задачи загрузки. URL: string
+[2025-08-29 10:05:31] INFO - app.services.tasks - [0b767ce0-9fa8-4ca3-a524-167bd5822a38] Рабочая директория создана: tasks\0b767ce0-9fa8-4ca3-a524-167bd5822a38
+[2025-08-29 10:05:31] INFO - app.services.tasks - [0b767ce0-9fa8-4ca3-a524-167bd5822a38] Состояние обновлено: PROCESSING
+[2025-08-29 10:05:31] INFO - app.services.downloader_engine - Обнаружено отдельное видео: string
+[2025-08-29 10:05:31] INFO - app.services.downloader_engine - Попытка 1/3 скачивания: string
+[2025-08-29 10:05:31] ERROR - app.services.downloader_engine - Ошибка при попытке 1: ERROR: [generic] 'string' is not a valid URL. Set --default-search "ytsearch" (or run  yt-dlp "ytsearch:string" ) to search YouTube
+[2025-08-29 10:05:31] INFO - app.services.downloader_engine - Повторная попытка через 5 секунд...
+[2025-08-29 10:05:36] INFO - app.services.downloader_engine - Попытка 2/3 скачивания: string
+[2025-08-29 10:05:36] ERROR - app.services.downloader_engine - Ошибка при попытке 2: ERROR: [generic] 'string' is not a valid URL. Set --default-search "ytsearch" (or run  yt-dlp "ytsearch:string" ) to search YouTube
+[2025-08-29 10:05:36] INFO - app.services.downloader_engine - Повторная попытка через 5 секунд...
+[2025-08-29 10:05:41] INFO - app.services.downloader_engine - Попытка 3/3 скачивания: string
+[2025-08-29 10:05:41] ERROR - app.services.downloader_engine - Ошибка при попытке 3: ERROR: [generic] 'string' is not a valid URL. Set --default-search "ytsearch" (or run  yt-dlp "ytsearch:string" ) to search YouTube
+[2025-08-29 10:05:41] ERROR - app.services.downloader_engine - Не удалось скачать аудио после 3 попыток
+[2025-08-29 10:05:41] ERROR - app.services.tasks - [0b767ce0-9fa8-4ca3-a524-167bd5822a38] Ошибка при обработке задачи: Не удалось скачать контент
+[2025-08-29 10:08:03] INFO - app.services.tasks - [413e28d7-d22c-4d24-9579-4e229bd0d124] Старт задачи загрузки. URL: whisper-small
+[2025-08-29 10:08:03] INFO - app.services.tasks - [413e28d7-d22c-4d24-9579-4e229bd0d124] Рабочая директория создана: tasks\413e28d7-d22c-4d24-9579-4e229bd0d124
+[2025-08-29 10:08:03] INFO - app.services.tasks - [413e28d7-d22c-4d24-9579-4e229bd0d124] Состояние обновлено: PROCESSING
+[2025-08-29 10:08:03] INFO - app.services.downloader_engine - Обнаружено отдельное видео: whisper-small
+[2025-08-29 10:08:03] INFO - app.services.downloader_engine - Попытка 1/3 скачивания: whisper-small
+[2025-08-29 10:08:03] ERROR - app.services.downloader_engine - Ошибка при попытке 1: ERROR: [generic] 'whisper-small' is not a valid URL. Set --default-search "ytsearch" (or run  yt-dlp "ytsearch:whisper-small" ) to search YouTube
+[2025-08-29 10:08:03] INFO - app.services.downloader_engine - Повторная попытка через 5 секунд...
+[2025-08-29 10:08:08] INFO - app.services.downloader_engine - Попытка 2/3 скачивания: whisper-small
+[2025-08-29 10:08:08] ERROR - app.services.downloader_engine - Ошибка при попытке 2: ERROR: [generic] 'whisper-small' is not a valid URL. Set --default-search "ytsearch" (or run  yt-dlp "ytsearch:whisper-small" ) to search YouTube
+[2025-08-29 10:08:08] INFO - app.services.downloader_engine - Повторная попытка через 5 секунд...
+[2025-08-29 10:08:13] INFO - app.services.downloader_engine - Попытка 3/3 скачивания: whisper-small
+[2025-08-29 10:08:13] ERROR - app.services.downloader_engine - Ошибка при попытке 3: ERROR: [generic] 'whisper-small' is not a valid URL. Set --default-search "ytsearch" (or run  yt-dlp "ytsearch:whisper-small" ) to search YouTube
+[2025-08-29 10:08:13] ERROR - app.services.downloader_engine - Не удалось скачать аудио после 3 попыток
+[2025-08-29 10:08:13] ERROR - app.services.tasks - [413e28d7-d22c-4d24-9579-4e229bd0d124] Ошибка при обработке задачи: Не удалось скачать контент
+[2025-08-29 10:08:29] INFO - app.services.downloader_engine - Модуль инициализирован
+[2025-08-29 10:08:30] INFO - app.services.models_loader - Модуль инициализирован
+[2025-08-29 10:08:30] INFO - app.utils.pdf_generator - Модуль инициализирован
+[2025-08-29 10:08:30] INFO - app.services.transcriber - Модуль инициализирован
+[2025-08-29 10:08:30] INFO - app.startup - Начата предзагрузка моделей...
+[2025-08-29 10:08:30] INFO - app.services.models_loader - Загрузка модели Whisper: 'small' (device=cpu, compute_type=int8)
+[2025-08-29 10:08:35] INFO - app.startup - Whisper-модель 'whisper-small' успешно загружена
+[2025-08-29 10:08:35] INFO - app.startup - Vosk-модель успешно загружена
+[2025-08-29 10:08:35] INFO - app.startup - Предзагрузка моделей завершена

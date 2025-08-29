@@ -11,9 +11,8 @@ async def create_download_task(request: DownloadRequest):
     try:
         task_id = str(uuid.uuid4())
         created_at = datetime.now().isoformat()
-
         celery_task = process_download_task.apply_async(
-            args=[task_id, request.url, request.quality.value, request.max_workers],
+            args=[task_id, request.url, request.quality.value, request.max_workers, request.model_name.value if request.model_name else "whisper-small"],
             task_id=task_id
         )
 
