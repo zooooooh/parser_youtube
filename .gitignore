@@ -10,3 +10,4 @@ get_pdf_file.py
 model_loader.py
 transcribe_video2text_vosk.py
 transcribe_video2text_whisper.py
+app.log

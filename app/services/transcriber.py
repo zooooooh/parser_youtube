@@ -4,10 +4,8 @@ import tempfile
 import wave
 import json
 from pathlib import Path
-
-
+import uuid
 from vosk import KaldiRecognizer
-
 from app.services.models_loader import get_whisper_model, get_vosk_model
 from app.utils.pdf_generator import generate_pdf_from_textfile
 from app.core.logging_config import setup_logger
@@ -88,10 +86,12 @@ def transcribe_with_vosk(mp3_path: str) -> str:
     """
     Транскрипция через vosk (после конвертации mp3 → wav).
     """
-    with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as temp_wav:
-        wav_path = temp_wav.name
+    # Просто создаём путь к .wav без открытия файла
+    wav_filename = f"{uuid.uuid4().hex}.wav"
+    wav_path = os.path.join(tempfile.gettempdir(), wav_filename)
 
     try:
+        # Конвертация через ffmpeg
         subprocess.run(
             [
                 "ffmpeg", "-i", mp3_path,
@@ -103,22 +103,26 @@ def transcribe_with_vosk(mp3_path: str) -> str:
             stderr=subprocess.DEVNULL
         )
 
-        wf = wave.open(wav_path, "rb")
-        vosk_model = get_vosk_model()
-        rec = KaldiRecognizer(vosk_model, wf.getframerate())
+        # Теперь читаем .wav файл (файл точно доступен)
+        with wave.open(wav_path, "rb") as wf:
+            vosk_model = get_vosk_model()
+            rec = KaldiRecognizer(vosk_model, wf.getframerate())
 
-        results = []
-        while True:
-            data = wf.readframes(4000)
-            if len(data) == 0:
-                break
-            if rec.AcceptWaveform(data):
-                results.append(json.loads(rec.Result())["text"])
-        results.append(json.loads(rec.FinalResult())["text"])
+            results = []
+            while True:
+                data = wf.readframes(4000)
+                if len(data) == 0:
+                    break
+                if rec.AcceptWaveform(data):
+                    results.append(json.loads(rec.Result())["text"])
+            results.append(json.loads(rec.FinalResult())["text"])
 
         return " ".join(results)
 
     finally:
         if os.path.exists(wav_path):
-            os.remove(wav_path)
-            logger.debug(f"Временный WAV файл удалён: {wav_path}")
+            try:
+                os.remove(wav_path)
+                logger.debug(f"Временный WAV файл удалён: {wav_path}")
+            except Exception as e:
+                logger.warning(f"Не удалось удалить WAV файл: {wav_path}: {e}")

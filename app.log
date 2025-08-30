@@ -316,3 +316,141 @@
 [2025-08-29 10:09:12] INFO - app.services.tasks - [79667fb2-58d9-45c1-baf1-e9bb86b2c838] Задача завершена успешно.
 [2025-08-29 10:09:12] INFO - app.services.tasks - [Transcribe] Начало транскрипции файла: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\79667fb2-58d9-45c1-baf1-e9bb86b2c838\video_1_1756433325.9179702.mp3 (модель: whisper-small)
 [2025-08-29 10:09:12] INFO - app.services.models_loader - Загрузка модели Whisper: 'small' (device=cpu, compute_type=int8)
+[2025-08-29 10:11:37] INFO - app.services.transcriber - Транскрипт сохранён в: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\79667fb2-58d9-45c1-baf1-e9bb86b2c838\video_1_1756433325.txt
+[2025-08-29 10:11:37] INFO - app.utils.pdf_generator - PDF создан: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\79667fb2-58d9-45c1-baf1-e9bb86b2c838\video_1_1756433325.pdf
+[2025-08-29 10:11:37] INFO - app.services.transcriber - PDF успешно создан: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\79667fb2-58d9-45c1-baf1-e9bb86b2c838\video_1_1756433325.pdf
+[2025-08-29 10:11:37] INFO - app.services.transcriber - Удалён исходный MP3 файл: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\79667fb2-58d9-45c1-baf1-e9bb86b2c838\video_1_1756433325.9179702.mp3
+[2025-08-29 10:11:37] INFO - app.services.transcriber - Удалён временный TXT файл: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\79667fb2-58d9-45c1-baf1-e9bb86b2c838\video_1_1756433325.txt
+[2025-08-29 10:11:37] INFO - app.services.tasks - [Transcribe] Транскрипция завершена: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\79667fb2-58d9-45c1-baf1-e9bb86b2c838\video_1_1756433325.9179702.txt
+[2025-08-29 10:11:37] INFO - app.services.tasks - [Transcribe] Начало транскрипции файла: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\79667fb2-58d9-45c1-baf1-e9bb86b2c838\video_0_1756433325.9174457.mp3 (модель: whisper-small)
+[2025-08-29 10:14:21] INFO - app.services.transcriber - Транскрипт сохранён в: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\79667fb2-58d9-45c1-baf1-e9bb86b2c838\video_0_1756433325.txt
+[2025-08-29 10:14:21] INFO - app.utils.pdf_generator - PDF создан: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\79667fb2-58d9-45c1-baf1-e9bb86b2c838\video_0_1756433325.pdf
+[2025-08-29 10:14:21] INFO - app.services.transcriber - PDF успешно создан: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\79667fb2-58d9-45c1-baf1-e9bb86b2c838\video_0_1756433325.pdf
+[2025-08-29 10:14:21] INFO - app.services.transcriber - Удалён исходный MP3 файл: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\79667fb2-58d9-45c1-baf1-e9bb86b2c838\video_0_1756433325.9174457.mp3
+[2025-08-29 10:14:21] INFO - app.services.transcriber - Удалён временный TXT файл: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\79667fb2-58d9-45c1-baf1-e9bb86b2c838\video_0_1756433325.txt
+[2025-08-29 10:14:21] INFO - app.services.tasks - [Transcribe] Транскрипция завершена: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\79667fb2-58d9-45c1-baf1-e9bb86b2c838\video_0_1756433325.9174457.txt
+[2025-08-29 10:15:45] INFO - app.services.tasks - [22e0a7f2-92f1-47b8-b827-12cda9c47eba] Старт задачи загрузки. URL: https://www.youtube.com/playlist?list=PLOGi5-fAu8bEL76P0TDo1XC0M78AXqhBX
+[2025-08-29 10:15:45] INFO - app.services.tasks - [22e0a7f2-92f1-47b8-b827-12cda9c47eba] Рабочая директория создана: tasks\22e0a7f2-92f1-47b8-b827-12cda9c47eba
+[2025-08-29 10:15:45] INFO - app.services.tasks - [22e0a7f2-92f1-47b8-b827-12cda9c47eba] Состояние обновлено: PROCESSING
+[2025-08-29 10:15:45] INFO - app.services.downloader_engine - Обнаружен плейлист: https://www.youtube.com/playlist?list=PLOGi5-fAu8bEL76P0TDo1XC0M78AXqhBX
+[2025-08-29 10:15:49] INFO - app.services.downloader_engine - Найдено 2 видео в плейлисте
+[2025-08-29 10:15:49] INFO - app.services.downloader_engine - Попытка 1/2 скачивания: https://www.youtube.com/watch?v=Y06CZUf3cm0
+[2025-08-29 10:15:49] INFO - app.services.downloader_engine - Попытка 1/2 скачивания: https://www.youtube.com/watch?v=LSEuKa2cdzM
+[2025-08-29 10:16:11] INFO - app.services.downloader_engine - Аудио успешно скачано: tasks\22e0a7f2-92f1-47b8-b827-12cda9c47eba\video_1_1756433749.9226613.mp3
+[2025-08-29 10:16:11] INFO - app.services.downloader_engine - Завершено: https://www.youtube.com/watch?v=LSEuKa2cdzM
+[2025-08-29 10:19:12] INFO - app.services.downloader_engine - Аудио успешно скачано: tasks\22e0a7f2-92f1-47b8-b827-12cda9c47eba\video_0_1756433749.9220562.mp3
+[2025-08-29 10:19:12] INFO - app.services.downloader_engine - Завершено: https://www.youtube.com/watch?v=Y06CZUf3cm0
+[2025-08-29 10:19:12] INFO - app.services.tasks - [22e0a7f2-92f1-47b8-b827-12cda9c47eba] Загружено файлов: 2
+[2025-08-29 10:19:12] INFO - app.services.tasks - [22e0a7f2-92f1-47b8-b827-12cda9c47eba] Отправлена задача транскрипции: 7fdee62a-803e-4719-be6b-0730f02ae787 для файла C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\22e0a7f2-92f1-47b8-b827-12cda9c47eba\video_1_1756433749.9226613.mp3
+[2025-08-29 10:19:12] INFO - app.services.tasks - [22e0a7f2-92f1-47b8-b827-12cda9c47eba] Отправлена задача транскрипции: 3b8f2642-d54f-4d42-9259-d9d600bfdfab для файла C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\22e0a7f2-92f1-47b8-b827-12cda9c47eba\video_0_1756433749.9220562.mp3
+[2025-08-29 10:19:12] INFO - app.services.tasks - [22e0a7f2-92f1-47b8-b827-12cda9c47eba] Задача завершена успешно.
+[2025-08-29 10:19:12] INFO - app.services.tasks - [Transcribe] Начало транскрипции файла: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\22e0a7f2-92f1-47b8-b827-12cda9c47eba\video_1_1756433749.9226613.mp3 (модель: vosk)
+[2025-08-29 10:19:50] ERROR - app.services.tasks - [Transcribe] Ошибка транскрипции C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\22e0a7f2-92f1-47b8-b827-12cda9c47eba\video_1_1756433749.9226613.mp3: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом: 'C:\\Users\\User\\AppData\\Local\\Temp\\tmp3zx1u57j.wav'
+[2025-08-29 10:19:50] INFO - app.services.tasks - [Transcribe] Начало транскрипции файла: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\22e0a7f2-92f1-47b8-b827-12cda9c47eba\video_0_1756433749.9220562.mp3 (модель: vosk)
+[2025-08-29 10:20:28] ERROR - app.services.tasks - [Transcribe] Ошибка транскрипции C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\22e0a7f2-92f1-47b8-b827-12cda9c47eba\video_0_1756433749.9220562.mp3: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом: 'C:\\Users\\User\\AppData\\Local\\Temp\\tmpz7ltql0h.wav'
+[2025-08-29 10:24:47] INFO - app.services.downloader_engine - Модуль инициализирован
+[2025-08-29 10:24:48] INFO - app.services.models_loader - Модуль инициализирован
+[2025-08-29 10:24:48] INFO - app.utils.pdf_generator - Модуль инициализирован
+[2025-08-29 10:24:48] INFO - app.services.transcriber - Модуль инициализирован
+[2025-08-29 10:24:48] INFO - app.startup - Начата предзагрузка моделей...
+[2025-08-29 10:24:48] INFO - app.services.models_loader - Загрузка модели Whisper: 'small' (device=cpu, compute_type=int8)
+[2025-08-29 10:24:52] INFO - app.startup - Whisper-модель 'whisper-small' успешно загружена
+[2025-08-29 10:24:53] INFO - app.startup - Vosk-модель успешно загружена
+[2025-08-29 10:24:53] INFO - app.startup - Предзагрузка моделей завершена
+[2025-08-29 10:25:13] INFO - app.services.downloader_engine - Модуль инициализирован
+[2025-08-29 10:25:15] INFO - app.services.models_loader - Модуль инициализирован
+[2025-08-29 10:25:15] INFO - app.utils.pdf_generator - Модуль инициализирован
+[2025-08-29 10:25:15] INFO - app.services.transcriber - Модуль инициализирован
+[2025-08-29 10:25:38] INFO - app.services.tasks - [4f701c9b-ea5f-43ea-b43d-058dd322cdb1] Старт задачи загрузки. URL: https://www.youtube.com/playlist?list=PLOGi5-fAu8bEL76P0TDo1XC0M78AXqhBX
+[2025-08-29 10:25:38] INFO - app.services.tasks - [4f701c9b-ea5f-43ea-b43d-058dd322cdb1] Рабочая директория создана: tasks\4f701c9b-ea5f-43ea-b43d-058dd322cdb1
+[2025-08-29 10:25:38] INFO - app.services.tasks - [4f701c9b-ea5f-43ea-b43d-058dd322cdb1] Состояние обновлено: PROCESSING
+[2025-08-29 10:25:38] INFO - app.services.downloader_engine - Обнаружен плейлист: https://www.youtube.com/playlist?list=PLOGi5-fAu8bEL76P0TDo1XC0M78AXqhBX
+[2025-08-29 10:25:43] INFO - app.services.downloader_engine - Найдено 2 видео в плейлисте
+[2025-08-29 10:25:43] INFO - app.services.downloader_engine - Попытка 1/2 скачивания: https://www.youtube.com/watch?v=Y06CZUf3cm0
+[2025-08-29 10:25:43] INFO - app.services.downloader_engine - Попытка 1/2 скачивания: https://www.youtube.com/watch?v=LSEuKa2cdzM
+[2025-08-29 10:26:07] INFO - app.services.downloader_engine - Аудио успешно скачано: tasks\4f701c9b-ea5f-43ea-b43d-058dd322cdb1\video_1_1756434343.0918312.mp3
+[2025-08-29 10:26:07] INFO - app.services.downloader_engine - Завершено: https://www.youtube.com/watch?v=LSEuKa2cdzM
+[2025-08-29 10:26:12] INFO - app.services.downloader_engine - Аудио успешно скачано: tasks\4f701c9b-ea5f-43ea-b43d-058dd322cdb1\video_0_1756434343.0913053.mp3
+[2025-08-29 10:26:12] INFO - app.services.downloader_engine - Завершено: https://www.youtube.com/watch?v=Y06CZUf3cm0
+[2025-08-29 10:26:12] INFO - app.services.tasks - [4f701c9b-ea5f-43ea-b43d-058dd322cdb1] Загружено файлов: 2
+[2025-08-29 10:26:12] INFO - app.services.tasks - [4f701c9b-ea5f-43ea-b43d-058dd322cdb1] Отправлена задача транскрипции: cad4a288-317b-40b4-b3bf-a2a20fe44226 для файла C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\4f701c9b-ea5f-43ea-b43d-058dd322cdb1\video_1_1756434343.0918312.mp3
+[2025-08-29 10:26:12] INFO - app.services.tasks - [4f701c9b-ea5f-43ea-b43d-058dd322cdb1] Отправлена задача транскрипции: ec8e31c7-5526-4dbe-97e8-9ea0f5fc561c для файла C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\4f701c9b-ea5f-43ea-b43d-058dd322cdb1\video_0_1756434343.0913053.mp3
+[2025-08-29 10:26:12] INFO - app.services.tasks - [4f701c9b-ea5f-43ea-b43d-058dd322cdb1] Задача завершена успешно.
+[2025-08-29 10:26:12] INFO - app.services.tasks - [Transcribe] Начало транскрипции файла: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\4f701c9b-ea5f-43ea-b43d-058dd322cdb1\video_1_1756434343.0918312.mp3 (модель: vosk)
+[2025-08-29 10:26:48] ERROR - app.services.tasks - [Transcribe] Ошибка транскрипции C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\4f701c9b-ea5f-43ea-b43d-058dd322cdb1\video_1_1756434343.0918312.mp3: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом: 'C:\\Users\\User\\AppData\\Local\\Temp\\tmpnmqbjhdj.wav'
+[2025-08-29 10:26:48] INFO - app.services.tasks - [Transcribe] Начало транскрипции файла: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\4f701c9b-ea5f-43ea-b43d-058dd322cdb1\video_0_1756434343.0913053.mp3 (модель: vosk)
+[2025-08-29 10:27:28] ERROR - app.services.tasks - [Transcribe] Ошибка транскрипции C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\4f701c9b-ea5f-43ea-b43d-058dd322cdb1\video_0_1756434343.0913053.mp3: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом: 'C:\\Users\\User\\AppData\\Local\\Temp\\tmpzhaez5k1.wav'
+[2025-08-29 10:28:16] INFO - app.services.downloader_engine - Модуль инициализирован
+[2025-08-29 10:28:18] INFO - app.services.models_loader - Модуль инициализирован
+[2025-08-29 10:28:18] INFO - app.utils.pdf_generator - Модуль инициализирован
+[2025-08-29 10:28:18] INFO - app.services.transcriber - Модуль инициализирован
+[2025-08-29 10:28:18] INFO - app.startup - Начата предзагрузка моделей...
+[2025-08-29 10:28:18] INFO - app.services.models_loader - Загрузка модели Whisper: 'small' (device=cpu, compute_type=int8)
+[2025-08-29 10:28:20] INFO - app.services.downloader_engine - Модуль инициализирован
+[2025-08-29 10:28:21] INFO - app.services.models_loader - Модуль инициализирован
+[2025-08-29 10:28:21] INFO - app.utils.pdf_generator - Модуль инициализирован
+[2025-08-29 10:28:21] INFO - app.services.transcriber - Модуль инициализирован
+[2025-08-29 10:28:22] INFO - app.startup - Whisper-модель 'whisper-small' успешно загружена
+[2025-08-29 10:28:22] INFO - app.startup - Vosk-модель успешно загружена
+[2025-08-29 10:28:22] INFO - app.startup - Предзагрузка моделей завершена
+[2025-08-29 10:28:58] INFO - app.services.tasks - [e579654b-1093-4445-bbf1-23e0919f5deb] Старт задачи загрузки. URL: https://www.youtube.com/playlist?list=PLOGi5-fAu8bEL76P0TDo1XC0M78AXqhBX
+[2025-08-29 10:28:58] INFO - app.services.tasks - [e579654b-1093-4445-bbf1-23e0919f5deb] Рабочая директория создана: tasks\e579654b-1093-4445-bbf1-23e0919f5deb
+[2025-08-29 10:28:58] INFO - app.services.tasks - [e579654b-1093-4445-bbf1-23e0919f5deb] Состояние обновлено: PROCESSING
+[2025-08-29 10:28:58] INFO - app.services.downloader_engine - Обнаружен плейлист: https://www.youtube.com/playlist?list=PLOGi5-fAu8bEL76P0TDo1XC0M78AXqhBX
+[2025-08-29 10:29:02] INFO - app.services.downloader_engine - Найдено 2 видео в плейлисте
+[2025-08-29 10:29:02] INFO - app.services.downloader_engine - Попытка 1/2 скачивания: https://www.youtube.com/watch?v=Y06CZUf3cm0
+[2025-08-29 10:29:02] INFO - app.services.downloader_engine - Попытка 1/2 скачивания: https://www.youtube.com/watch?v=LSEuKa2cdzM
+[2025-08-29 10:29:23] INFO - app.services.downloader_engine - Аудио успешно скачано: tasks\e579654b-1093-4445-bbf1-23e0919f5deb\video_1_1756434542.6742148.mp3
+[2025-08-29 10:29:23] INFO - app.services.downloader_engine - Завершено: https://www.youtube.com/watch?v=LSEuKa2cdzM
+[2025-08-29 10:29:26] INFO - app.services.downloader_engine - Аудио успешно скачано: tasks\e579654b-1093-4445-bbf1-23e0919f5deb\video_0_1756434542.673683.mp3
+[2025-08-29 10:29:26] INFO - app.services.downloader_engine - Завершено: https://www.youtube.com/watch?v=Y06CZUf3cm0
+[2025-08-29 10:29:26] INFO - app.services.tasks - [e579654b-1093-4445-bbf1-23e0919f5deb] Загружено файлов: 2
+[2025-08-29 10:29:26] INFO - app.services.tasks - [e579654b-1093-4445-bbf1-23e0919f5deb] Отправлена задача транскрипции: bf6ba7ac-c14a-4972-a9da-0235d5544609 для файла C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\e579654b-1093-4445-bbf1-23e0919f5deb\video_1_1756434542.6742148.mp3
+[2025-08-29 10:29:26] INFO - app.services.tasks - [e579654b-1093-4445-bbf1-23e0919f5deb] Отправлена задача транскрипции: 33055fc1-c45d-4223-8a1f-593f3061f876 для файла C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\e579654b-1093-4445-bbf1-23e0919f5deb\video_0_1756434542.673683.mp3
+[2025-08-29 10:29:26] INFO - app.services.tasks - [e579654b-1093-4445-bbf1-23e0919f5deb] Задача завершена успешно.
+[2025-08-29 10:29:26] INFO - app.services.tasks - [Transcribe] Начало транскрипции файла: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\e579654b-1093-4445-bbf1-23e0919f5deb\video_1_1756434542.6742148.mp3 (модель: vosk)
+[2025-08-29 10:29:55] ERROR - app.services.tasks - [Transcribe] Ошибка транскрипции C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\e579654b-1093-4445-bbf1-23e0919f5deb\video_1_1756434542.6742148.mp3: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом: 'C:\\Users\\User\\AppData\\Local\\Temp\\tmpgzqyv4go.wav'
+[2025-08-29 10:29:55] INFO - app.services.tasks - [Transcribe] Начало транскрипции файла: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\e579654b-1093-4445-bbf1-23e0919f5deb\video_0_1756434542.673683.mp3 (модель: vosk)
+[2025-08-29 10:30:27] ERROR - app.services.tasks - [Transcribe] Ошибка транскрипции C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\e579654b-1093-4445-bbf1-23e0919f5deb\video_0_1756434542.673683.mp3: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом: 'C:\\Users\\User\\AppData\\Local\\Temp\\tmp5_lcovom.wav'
+[2025-08-29 10:31:49] INFO - app.services.downloader_engine - Модуль инициализирован
+[2025-08-29 10:31:50] INFO - app.services.downloader_engine - Модуль инициализирован
+[2025-08-29 10:31:50] INFO - app.services.models_loader - Модуль инициализирован
+[2025-08-29 10:31:50] INFO - app.utils.pdf_generator - Модуль инициализирован
+[2025-08-29 10:31:50] INFO - app.services.transcriber - Модуль инициализирован
+[2025-08-29 10:31:50] INFO - app.startup - Начата предзагрузка моделей...
+[2025-08-29 10:31:50] INFO - app.services.models_loader - Загрузка модели Whisper: 'small' (device=cpu, compute_type=int8)
+[2025-08-29 10:31:52] INFO - app.services.models_loader - Модуль инициализирован
+[2025-08-29 10:31:52] INFO - app.utils.pdf_generator - Модуль инициализирован
+[2025-08-29 10:31:52] INFO - app.services.transcriber - Модуль инициализирован
+[2025-08-29 10:31:54] INFO - app.startup - Whisper-модель 'whisper-small' успешно загружена
+[2025-08-29 10:31:55] INFO - app.startup - Vosk-модель успешно загружена
+[2025-08-29 10:31:55] INFO - app.startup - Предзагрузка моделей завершена
+[2025-08-29 10:33:16] INFO - app.services.tasks - [c7f9bbb0-bba1-4b60-8fd8-8a94ee659219] Старт задачи загрузки. URL: https://www.youtube.com/playlist?list=PLOGi5-fAu8bEL76P0TDo1XC0M78AXqhBX
+[2025-08-29 10:33:16] INFO - app.services.tasks - [c7f9bbb0-bba1-4b60-8fd8-8a94ee659219] Рабочая директория создана: tasks\c7f9bbb0-bba1-4b60-8fd8-8a94ee659219
+[2025-08-29 10:33:16] INFO - app.services.tasks - [c7f9bbb0-bba1-4b60-8fd8-8a94ee659219] Состояние обновлено: PROCESSING
+[2025-08-29 10:33:16] INFO - app.services.downloader_engine - Обнаружен плейлист: https://www.youtube.com/playlist?list=PLOGi5-fAu8bEL76P0TDo1XC0M78AXqhBX
+[2025-08-29 10:33:21] INFO - app.services.downloader_engine - Найдено 2 видео в плейлисте
+[2025-08-29 10:33:21] INFO - app.services.downloader_engine - Попытка 1/2 скачивания: https://www.youtube.com/watch?v=Y06CZUf3cm0
+[2025-08-29 10:33:21] INFO - app.services.downloader_engine - Попытка 1/2 скачивания: https://www.youtube.com/watch?v=LSEuKa2cdzM
+[2025-08-29 10:33:41] INFO - app.services.downloader_engine - Аудио успешно скачано: tasks\c7f9bbb0-bba1-4b60-8fd8-8a94ee659219\video_1_1756434801.250283.mp3
+[2025-08-29 10:33:41] INFO - app.services.downloader_engine - Завершено: https://www.youtube.com/watch?v=LSEuKa2cdzM
+[2025-08-29 10:33:46] INFO - app.services.downloader_engine - Аудио успешно скачано: tasks\c7f9bbb0-bba1-4b60-8fd8-8a94ee659219\video_0_1756434801.2497303.mp3
+[2025-08-29 10:33:46] INFO - app.services.downloader_engine - Завершено: https://www.youtube.com/watch?v=Y06CZUf3cm0
+[2025-08-29 10:33:46] INFO - app.services.tasks - [c7f9bbb0-bba1-4b60-8fd8-8a94ee659219] Загружено файлов: 2
+[2025-08-29 10:33:46] INFO - app.services.tasks - [c7f9bbb0-bba1-4b60-8fd8-8a94ee659219] Отправлена задача транскрипции: 16abb0d6-8495-4b04-9ab2-a23e7a9b676b для файла C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\c7f9bbb0-bba1-4b60-8fd8-8a94ee659219\video_1_1756434801.250283.mp3
+[2025-08-29 10:33:46] INFO - app.services.tasks - [c7f9bbb0-bba1-4b60-8fd8-8a94ee659219] Отправлена задача транскрипции: fceec386-6ebd-49ff-905d-aa07273cac0b для файла C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\c7f9bbb0-bba1-4b60-8fd8-8a94ee659219\video_0_1756434801.2497303.mp3
+[2025-08-29 10:33:46] INFO - app.services.tasks - [c7f9bbb0-bba1-4b60-8fd8-8a94ee659219] Задача завершена успешно.
+[2025-08-29 10:33:46] INFO - app.services.tasks - [Transcribe] Начало транскрипции файла: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\c7f9bbb0-bba1-4b60-8fd8-8a94ee659219\video_1_1756434801.250283.mp3 (модель: vosk)
+[2025-08-29 10:34:14] INFO - app.services.transcriber - Транскрипт сохранён в: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\c7f9bbb0-bba1-4b60-8fd8-8a94ee659219\video_1_1756434801.txt
+[2025-08-29 10:34:14] INFO - app.utils.pdf_generator - PDF создан: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\c7f9bbb0-bba1-4b60-8fd8-8a94ee659219\video_1_1756434801.pdf
+[2025-08-29 10:34:14] INFO - app.services.transcriber - PDF успешно создан: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\c7f9bbb0-bba1-4b60-8fd8-8a94ee659219\video_1_1756434801.pdf
+[2025-08-29 10:34:14] INFO - app.services.transcriber - Удалён исходный MP3 файл: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\c7f9bbb0-bba1-4b60-8fd8-8a94ee659219\video_1_1756434801.250283.mp3
+[2025-08-29 10:34:14] INFO - app.services.transcriber - Удалён временный TXT файл: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\c7f9bbb0-bba1-4b60-8fd8-8a94ee659219\video_1_1756434801.txt
+[2025-08-29 10:34:14] INFO - app.services.tasks - [Transcribe] Транскрипция завершена: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\c7f9bbb0-bba1-4b60-8fd8-8a94ee659219\video_1_1756434801.250283.txt
+[2025-08-29 10:34:14] INFO - app.services.tasks - [Transcribe] Начало транскрипции файла: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\c7f9bbb0-bba1-4b60-8fd8-8a94ee659219\video_0_1756434801.2497303.mp3 (модель: vosk)
+[2025-08-29 10:34:52] INFO - app.services.transcriber - Транскрипт сохранён в: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\c7f9bbb0-bba1-4b60-8fd8-8a94ee659219\video_0_1756434801.txt
+[2025-08-29 10:34:52] INFO - app.utils.pdf_generator - PDF создан: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\c7f9bbb0-bba1-4b60-8fd8-8a94ee659219\video_0_1756434801.pdf
+[2025-08-29 10:34:52] INFO - app.services.transcriber - PDF успешно создан: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\c7f9bbb0-bba1-4b60-8fd8-8a94ee659219\video_0_1756434801.pdf
+[2025-08-29 10:34:52] INFO - app.services.transcriber - Удалён исходный MP3 файл: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\c7f9bbb0-bba1-4b60-8fd8-8a94ee659219\video_0_1756434801.2497303.mp3
+[2025-08-29 10:34:52] INFO - app.services.transcriber - Удалён временный TXT файл: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\c7f9bbb0-bba1-4b60-8fd8-8a94ee659219\video_0_1756434801.txt
+[2025-08-29 10:34:52] INFO - app.services.tasks - [Transcribe] Транскрипция завершена: C:\Users\User\PycharmProjects\ParserYoutube_1.0.0\tasks\c7f9bbb0-bba1-4b60-8fd8-8a94ee659219\video_0_1756434801.2497303.txt
